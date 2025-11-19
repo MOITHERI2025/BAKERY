@@ -1,10 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lahli's Cakes - Home</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         /* Reset and Base Styles */
         * {
@@ -36,14 +37,19 @@
             animation: fadeIn 0.5s ease-in-out;
             flex: 1;
         }
-        
+
         .page.active {
             display: block;
         }
-        
+
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         /* Header Styles */
@@ -150,7 +156,8 @@
             overflow: hidden;
         }
 
-        .menu-table th, .menu-table td {
+        .menu-table th,
+        .menu-table td {
             padding: 12px 15px;
             text-align: left;
             border-bottom: 1px solid #ffd1dc;
@@ -461,48 +468,48 @@
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             nav ul li {
                 margin: 5px 0;
                 width: 100%;
                 text-align: center;
             }
-            
+
             nav ul li a {
                 display: block;
                 padding: 10px;
             }
-            
+
             h1 {
                 font-size: 2.2rem;
             }
-            
+
             h2 {
                 font-size: 1.8rem;
             }
-            
+
             .cake-item {
                 width: 100%;
                 max-width: 350px;
             }
-            
+
             .about-content {
                 flex-direction: column;
             }
-            
+
             .about-image {
                 order: -1;
             }
-            
+
             .order-form {
                 padding: 20px;
             }
-            
+
             .nav-buttons {
                 flex-direction: column;
                 gap: 10px;
             }
-            
+
             .nav-buttons .btn {
                 width: 100%;
             }
@@ -512,25 +519,27 @@
             h1 {
                 font-size: 1.8rem;
             }
-            
+
             h2 {
                 font-size: 1.5rem;
             }
-            
+
             .sub-title {
                 font-size: 1.1rem;
             }
-            
+
             .menu-table {
                 font-size: 0.9rem;
             }
-            
-            .menu-table th, .menu-table td {
+
+            .menu-table th,
+            .menu-table td {
                 padding: 8px 10px;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
@@ -542,7 +551,7 @@
             </div>
         </div>
     </header>
-    
+
     <!-- Navigation -->
     <nav>
         <div class="container">
@@ -555,56 +564,62 @@
             </ul>
         </div>
     </nav>
-    
+
     <div class="container">
         <!-- Home Page -->
         <section id="home" class="page active">
             <h2>Welcome to Lahli's Cakes</h2>
-            <p>We specialize in creating delicious, custom-made cakes for all occasions. From birthdays to weddings, our cakes are made with love and the finest ingredients.</p>
-            
+            <p>We specialize in creating delicious, custom-made cakes for all occasions. From birthdays to weddings, our
+                cakes are made with love and the finest ingredients.</p>
+
             <div class="cake-gallery">
                 <div class="cake-item">
-                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=1089&q=80" alt="Chocolate Cake">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=1089&q=80"
+                        alt="Chocolate Cake">
                     <div class="cake-info">
                         <h3>Chocolate Delight</h3>
                         <p>Rich chocolate cake with creamy frosting</p>
                     </div>
                 </div>
-                
+
                 <div class="cake-item">
-                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80" alt="Vanilla Cake">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80"
+                        alt="Vanilla Cake">
                     <div class="cake-info">
                         <h3>Vanilla Dream</h3>
                         <p>Classic vanilla cake with buttercream frosting</p>
                     </div>
                 </div>
-                
+
                 <div class="cake-item">
-                    <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80" alt="Red Velvet Cake">
+                    <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80"
+                        alt="Red Velvet Cake">
                     <div class="cake-info">
                         <h3>Red Velvet</h3>
                         <p>Moist red velvet cake with cream cheese frosting</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="video-container">
                 <video controls width="100%" height="auto">
-                    <source src="https://assets.mixkit.co/videos/preview/mixkit-slicing-a-cake-42955-large.mp4" type="video/mp4">
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-slicing-a-cake-42955-large.mp4"
+                        type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            
+
             <div class="nav-buttons">
                 <button class="btn" onclick="showPage('menu')">View Our Menu →</button>
             </div>
         </section>
-        
+
         <!-- Menu Page -->
         <section id="menu" class="page">
             <h2>Our Menu & Prices</h2>
-            <p>All our cakes are available in different sizes. Custom decorations and messages are available at an additional cost.</p>
-            
+            <p>All our cakes are available in different sizes. Custom decorations and messages are available at an
+                additional cost.</p>
+
             <table class="menu-table">
                 <thead>
                     <tr>
@@ -660,7 +675,7 @@
                     </tr>
                 </tbody>
             </table>
-            
+
             <h3 style="margin-top: 30px; color: #8a2be2;">Cupcakes (Per Dozen)</h3>
             <table class="menu-table">
                 <thead>
@@ -688,7 +703,7 @@
                     </tr>
                 </tbody>
             </table>
-            
+
             <div class="cake-flavors-list">
                 <div class="flavor-item">Chocolate</div>
                 <div class="flavor-item">Vanilla</div>
@@ -697,55 +712,59 @@
                 <div class="flavor-item">Blueberry</div>
                 <div class="flavor-item">Carrot</div>
             </div>
-            
+
             <div class="nav-buttons">
                 <button class="btn" onclick="showPage('home')">← Home</button>
                 <button class="btn" onclick="showPage('gallery')">View Gallery →</button>
             </div>
         </section>
-        
+
         <!-- Gallery Page -->
         <section id="gallery" class="page">
             <h2>Our Cake Gallery</h2>
-            <p>Take a look at some of our delicious cake creations. Each cake is custom-made to suit your special occasion.</p>
-            
+            <p>Take a look at some of our delicious cake creations. Each cake is custom-made to suit your special
+                occasion.</p>
+
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1290&q=80" alt="Wedding Cake">
+                    <img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1290&q=80"
+                        alt="Wedding Cake">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80" alt="Birthday Cake">
+                    <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80"
+                        alt="Birthday Cake">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Chocolate Cake">
+                    <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+                        alt="Chocolate Cake">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80" alt="Cupcakes">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1280&q=80" alt="Custom Cake">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80" alt="Celebration Cake">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80"
+                        alt="Celebration Cake">
                 </div>
             </div>
-            
+
             <div class="nav-buttons">
                 <button class="btn" onclick="showPage('menu')">← Menu</button>
                 <button class="btn" onclick="showPage('about')">About Us →</button>
             </div>
         </section>
-        
+
         <!-- About Page -->
         <section id="about" class="page">
             <h2>About Us</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Lahli's Cakes was established in 2015 by Lahli Manyaka, a passionate baker with a dream to share her delicious creations with her community in Burgersfort, Limpopo.</p>
-                    <p>What started as a small home-based business has grown into a beloved local bakery known for its quality ingredients, attention to detail, and exceptional customer service.</p>
-                    <p>We believe that every celebration deserves a special cake, and we take pride in creating custom cakes that make your events memorable. All our cakes are baked fresh to order using the finest ingredients and traditional baking methods.</p>
-                    <p>Whether you're celebrating a birthday, wedding, anniversary, or just want a sweet treat, we're here to make it special with our delicious cakes.</p>
-                    
+                    <p>Lahli's Cakes was established in 2015 by Lahli Manyaka, a passionate baker with a dream to share
+                        her delicious creations with her community in Burgersfort, Limpopo.</p>
+                    <p>What started as a small home-based business has grown into a beloved local bakery known for its
+                        quality ingredients, attention to detail, and exceptional customer service.</p>
+                    <p>We believe that every celebration deserves a special cake, and we take pride in creating custom
+                        cakes that make your events memorable. All our cakes are baked fresh to order using the finest
+                        ingredients and traditional baking methods.</p>
+                    <p>Whether you're celebrating a birthday, wedding, anniversary, or just want a sweet treat, we're
+                        here to make it special with our delicious cakes.</p>
+
                     <div class="social-links">
                         <a href="https://facebook.com/lahliscakes" class="social-icon" target="_blank">
                             <span>Facebook: @LahlisCakes</span>
@@ -756,16 +775,17 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Lahli's Bakery">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+                        alt="Lahli's Bakery">
                 </div>
             </div>
-            
+
             <div class="nav-buttons">
                 <button class="btn" onclick="showPage('gallery')">← Gallery</button>
                 <button class="btn" onclick="showPage('contact')">Contact Us →</button>
             </div>
         </section>
-        
+
         <!-- Contact Page -->
         <section id="contact" class="page">
             <h2>Contact Us</h2>
@@ -776,23 +796,23 @@
                     <p>Burgersfort, Limpopo</p>
                     <p>South Africa</p>
                 </div>
-                
+
                 <div class="contact-card">
                     <h3>Hours</h3>
                     <p>Monday-Friday: 8:00 AM - 6:00 PM</p>
                     <p>Saturday: 8:00 AM - 4:00 PM</p>
                     <p>Sunday: 9:00 AM - 2:00 PM</p>
                 </div>
-                
+
                 <div class="contact-card">
-                    <h3>Get In Touch</h3>
-                    <p>Phone: 015 123 4567</p>
+                    <h3>Get In Touch/Enquire</h3>
+                    <p>Phone: 076 453 6982</p>
                     <p>Email: info@lahliscakes.co.za</p>
                     <p>Facebook: @LahlisCakes</p>
                     <p>Instagram: @LahlisCakes</p>
                 </div>
             </div>
-            
+
             <div class="order-form">
                 <h3 style="text-align: center; color: #8a2be2; margin-bottom: 20px;">Place Your Order</h3>
                 <form id="orderForm">
@@ -800,17 +820,17 @@
                         <label for="name">Full Name</label>
                         <input type="text" id="name" required placeholder="Your full name">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" required placeholder="Your email address">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" required placeholder="Your phone number">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="cake-type">Cake Type</label>
                         <select id="cake-type" required>
@@ -823,7 +843,7 @@
                             <option value="carrot">Carrot Cake</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="size">Cake Size</label>
                         <select id="size" required>
@@ -834,21 +854,22 @@
                             <option value="x-large">Extra Large</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="message">Special Instructions</label>
-                        <textarea id="message" placeholder="Any special decorations, messages, or dietary requirements"></textarea>
+                        <textarea id="message"
+                            placeholder="Any special decorations, messages, or dietary requirements"></textarea>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="date">Delivery/Pickup Date</label>
                         <input type="date" id="date" required>
                     </div>
-                    
+
                     <button type="submit" class="btn">Place Order</button>
                 </form>
             </div>
-            
+
             <div class="social-links">
                 <a href="https://facebook.com/lahliscakes" class="social-icon" target="_blank">
                     <span>Follow us on Facebook</span>
@@ -857,14 +878,14 @@
                     <span>Follow us on Instagram</span>
                 </a>
             </div>
-            
+
             <div class="nav-buttons">
                 <button class="btn" onclick="showPage('about')">← About Us</button>
                 <button class="btn" onclick="showPage('home')">Home →</button>
             </div>
         </section>
     </div>
-    
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -878,8 +899,9 @@
                 </a>
             </div>
         </div>
+        
     </footer>
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3050.696353754231!2d29.355867999999997!3d-23.838818999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDUwJzE5LjgiUyAyOcKwMjEnMjEuMSJF!5e1!3m2!1sen!2sza!4v1763573296540!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <script>
         // Function to show the selected page and hide others
         function showPage(pageId) {
@@ -888,25 +910,25 @@
             pages.forEach(page => {
                 page.classList.remove('active');
             });
-            
+
             // Show the selected page
             document.getElementById(pageId).classList.add('active');
-            
+
             // Scroll to top of the page
             window.scrollTo(0, 0);
         }
-        
+
         // Handle form submission
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
+        document.getElementById('orderForm').addEventListener('submit', function (e) {
             e.preventDefault();
             alert('Thank you for your order! We will contact you shortly to confirm the details.');
             this.reset();
         });
-        
+
         // Set minimum date for order form to today
         document.getElementById('date').min = new Date().toISOString().split('T')[0];
     </script>
 </body>
+
 </html>
 ```
-
